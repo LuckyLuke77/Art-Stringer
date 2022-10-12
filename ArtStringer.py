@@ -16,7 +16,7 @@ conns = []                    # create an enpty array that will be used to store
 for i in range(len(pins)):              # force the labels to show clockwise and a quarter earlier
     pins[i] = int(abs(i - len(pins)) + summOfPins / 4) 
     if pins[i] > summOfPins: pins[i] -= summOfPins
-for i in range(100):
+for i in range(99):
     conns.append((ToFormat(i + 1), ToFormat(i + 41)))
 G = nx.Graph()
 G.add_nodes_from(pins)
